@@ -1,0 +1,23 @@
+conda install -y nb_conda
+conda create --name csda1000env python=3.6
+source activate csda1000env
+conda config --add channels udst
+conda config --add channels conda-forge
+conda update conda
+conda update --all
+conda install -y nb_conda
+conda install -y ipykernel
+conda install -y -c conda-forge ipywidgets
+conda install -y geopandas
+conda install -y rasterio 
+conda install -y pandana
+conda install -y urbansim
+conda install -y osmnx
+conda install -y geoplot
+conda install -y geopy 
+conda install -y plotly
+conda install -y -c conda-forge cartopy
+conda install -y -c conda-forge folium 
+conda install -y -c conda-forge pysal 
+conda install -y -c conda-forge basemap
+
