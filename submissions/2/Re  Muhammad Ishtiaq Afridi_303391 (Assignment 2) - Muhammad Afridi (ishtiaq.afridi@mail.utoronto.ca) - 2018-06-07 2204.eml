@@ -1,0 +1,287 @@
+Return-Path: <ishtiaq.afridi@mail.utoronto.ca>
+Received: from CAN01-QB1-obe.outbound.protection.outlook.com (mail-eopbgr660137.outbound.protection.outlook.com [40.107.66.137])
+	by maildelivery-2.uit.yorku.ca (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id w5824MtK003605
+	(version=TLSv1/SSLv3 cipher=AES256-SHA256 bits=256 verify=NOT)
+	for <mtenney@yorku.ca>; Thu, 7 Jun 2018 22:04:23 -0400
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=utoronto.onmicrosoft.com; s=selector1-mail-utoronto-ca;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=EMJ4Yk/E8PFCB2PtnSCkKSmWco9QV8kDFCiGUaxAVco=;
+ b=WG/e6ysVc92wZUOBtkYI9ItZlI2XIA0ZVy1i3REmmjn4rngFHo8eh9GEifuv/qijux4i1MOhxZmuFUExO4wo/UUqqsaw6V08aJkjbbp0F/FEwhdV6JQSreQkCn40f/IaUshy8riTXpt69dac9S+oWcduQbZyVTAr047Isas4P0I=
+Received: from YTOPR0101MB0857.CANPRD01.PROD.OUTLOOK.COM (52.132.50.10) by
+ YTOPR0101MB0764.CANPRD01.PROD.OUTLOOK.COM (52.132.44.12) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.820.14; Fri, 8 Jun 2018 02:04:20 +0000
+Received: from YTOPR0101MB0857.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::550:5744:2803:2176]) by YTOPR0101MB0857.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::550:5744:2803:2176%3]) with mapi id 15.20.0841.015; Fri, 8 Jun 2018
+ 02:04:20 +0000
+From: Muhammad Afridi <ishtiaq.afridi@mail.utoronto.ca>
+To: "mtenney@yorku.ca" <mtenney@yorku.ca>
+Subject: Re: Muhammad Ishtiaq Afridi_303391 (Assignment 2)
+Thread-Topic: Muhammad Ishtiaq Afridi_303391 (Assignment 2)
+Thread-Index: AQHT/gqNQ/jqEMaK30mqsnPakAQXn6RVnPZH
+Date: Fri, 8 Jun 2018 02:04:20 +0000
+Message-ID: <YTOPR0101MB08573837B343CDE47006C82AB77B0@YTOPR0101MB0857.CANPRD01.PROD.OUTLOOK.COM>
+References: <6346dc7.92c9f5e5e72edc2f0e5cf41065da2599@mymail.yorku.ca>
+In-Reply-To: <6346dc7.92c9f5e5e72edc2f0e5cf41065da2599@mymail.yorku.ca>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=ishtiaq.afridi@mail.utoronto.ca; 
+x-originating-ip: [130.63.1.87]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1;YTOPR0101MB0764;7:aPVcaRrDEiSTE43WtioN3JbtIGKkiPlDqR9/NtmAMajWOuuhjQBIzF2BbMT287cP9p1Ss59PUi7fll8eviDqC8JWARlyHHBnLSjEGV/wV3hQEL7JcryIqFOcQQLrx6eemstLx4Y12csM1N1QGtsMzOU/vAUWBH91967y062qrwBOO8mwzmDgtXGw844hAGj1D41x1/Y8A1NSTYR28jId2zRCsBgClqcqoZe6VMfrFeHhOqh2+mzvXsxAE2VsYGEn
+x-ms-exchange-antispam-srfa-diagnostics: SOS;
+x-microsoft-antispam: UriScan:(250813380310098);BCL:0;PCL:0;RULEID:(7020095)(4652020)(5600026)(4534165)(4627221)(201703031133081)(201702281549075)(2017052603328)(7153060)(7193020);SRVR:YTOPR0101MB0764;
+x-ms-traffictypediagnostic: YTOPR0101MB0764:
+x-microsoft-antispam-prvs: <YTOPR0101MB076433FE15B77CCB92A0A40CB77B0@YTOPR0101MB0764.CANPRD01.PROD.OUTLOOK.COM>
+x-exchange-antispam-report-test: UriScan:(52743740316358)(250813380310098);
+x-ms-exchange-senderadcheck: 1
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(8211001083)(6040522)(2401047)(8121501046)(5005006)(93006095)(93001095)(10201501046)(3002001)(3231254)(944501410)(52105095)(149027)(150027)(6041310)(201703131423095)(201703031522075)(201702281529075)(201702281528075)(20161123555045)(201703061421075)(201703061406153)(20161123560045)(20161123562045)(20161123558120)(20161123564045)(6072148)(201708071742011)(7699016);SRVR:YTOPR0101MB0764;BCL:0;PCL:0;RULEID:;SRVR:YTOPR0101MB0764;
+x-forefront-prvs: 06973FFAD3
+x-forefront-antispam-report: SFV:NSPM;SFS:(10019020)(39860400002)(346002)(376002)(39380400002)(396003)(366004)(189003)(13464003)(501624003)(199004)(54896002)(186003)(7696005)(786003)(8936002)(55016002)(81156014)(66066001)(74316002)(296002)(25786009)(1730700003)(102836004)(81166006)(8676002)(7736002)(14454004)(6436002)(33656002)(97736004)(26005)(105586002)(5640700003)(2900100001)(733005)(106356001)(86362001)(19627405001)(6606003)(3846002)(478600001)(2351001)(6116002)(6916009)(68736007)(99286004)(476003)(229853002)(76176011)(9686003)(5660300001)(6246003)(53936002)(2906002)(3660700001)(74482002)(3280700002)(446003)(6506007)(2501003)(5250100002)(486006)(5890100001)(316002)(11346002)(53546011);DIR:OUT;SFP:1102;SCL:1;SRVR:YTOPR0101MB0764;H:YTOPR0101MB0857.CANPRD01.PROD.OUTLOOK.COM;FPR:;SPF:None;LANG:en;PTR:InfoNoRecords;MX:1;A:1;
+received-spf: None (protection.outlook.com: mail.utoronto.ca does not
+ designate permitted sender hosts)
+x-microsoft-antispam-message-info: Rfl6Uip7YILoaETYZ2+HFlFOeWw6d3OgKnXSaqteh3E9IidDA85jSVnCuZKdJp5uQeVbbeCJN1rVOnitruISLvCXgE/he7ZyYwnOlrz5Zobxf4fSAa2rLG6t/eDtk2ioNP7El1Be+n4Hn8MqcmmE/2igBd52mNWbljhCuYW/K+789iNk4nkLfVWn1U1s6XsD
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative;
+	boundary="_000_YTOPR0101MB08573837B343CDE47006C82AB77B0YTOPR0101MB0857_"
+MIME-Version: 1.0
+X-MS-Office365-Filtering-Correlation-Id: 89fc28bf-0a92-412f-7c4e-08d5cce425f5
+X-OriginatorOrg: mail.utoronto.ca
+X-MS-Exchange-CrossTenant-Network-Message-Id: 89fc28bf-0a92-412f-7c4e-08d5cce425f5
+X-MS-Exchange-CrossTenant-originalarrivaltime: 08 Jun 2018 02:04:20.3897
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 78aac226-2f03-4b4d-9037-b46d56c55210
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: YTOPR0101MB0764
+X-SystemBogosity: No, tests=bogofilter, spamicity=0.501202, version=1.2.4
+
+--_000_YTOPR0101MB08573837B343CDE47006C82AB77B0YTOPR0101MB0857_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+
+I hope you are doing well. I was wondering if we have to submit Assignment =
+3 or not?
+
+
+Thanks!
+
+
+Ishtiaq.
+
+
+Muhammad Ishtiaq Afridi | BBA | MSc DS |
+
+Master of Science in Sustainability Management (MScSM)
+Institute for Management & Innovation | University of Toronto Mississauga
+ (647) 839 7890 | E: ishtiaq.afridi@mail.utoronto.ca
+
+
+________________________________
+From: mtenney@yorku.ca <mtenney@yorku.ca>
+Sent: Wednesday, June 6, 2018 7:52:18 PM
+To: Muhammad Afridi
+Subject: Re: Muhammad Ishtiaq Afridi_303391 (Assignment 2)
+
+
+Nice job, will go over it tomorrow for sure.
+---- Original Message ----
+From: Muhammad Afridi <ishtiaq.afridi@mail.utoronto.ca>
+To: "mtenney@yorku.ca" <mtenney@yorku.ca>
+Sent: Wed, Jun 6, 2018, 10:31 PM
+Subject: Muhammad Ishtiaq Afridi_303391 (Assignment 2)
+
+
+Hello,
+
+
+Please find the 'Assignment 2' in the attachment. I had difficulty in under=
+standing question 16,19 and 21. I would highly appreciate if you could kind=
+ly help me understand these questions.
+
+
+Thanks!
+
+
+Ishtiaq.
+
+
+Muhammad Ishtiaq Afridi | BBA | MSc DS |
+
+Master of Science in Sustainability Management (MScSM)
+Institute for Management & Innovation | University of Toronto Mississauga
+ (647) 839 7890 | E: ishtiaq.afridi@mail.utoronto.ca
+
+
+--_000_YTOPR0101MB08573837B343CDE47006C82AB77B0YTOPR0101MB0857_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi=
+n-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font=
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr">
+<p style=3D"margin-top:0;margin-bottom:0">Hello,</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0">I hope you are doing well. I was =
+wondering&nbsp;if we have to submit Assignment 3 or not?&nbsp;</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0">Thanks!</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0;margin-bottom:0">Ishtiaq.</p>
+<p style=3D"margin-top:0;margin-bottom:0"><br>
+</p>
+<div id=3D"Signature">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size: 12pt; color: rgb(0, 0,=
+ 0); background-color: rgb(255, 255, 255); font-family: Calibri, Arial, Hel=
+vetica, sans-serif, EmojiFont, &quot;Apple Color Emoji&quot;, &quot;Segoe U=
+I Emoji&quot;, NotoColorEmoji, &quot;Segoe UI Symbol&quot;, &quot;Android E=
+moji&quot;, EmojiSymbols;">
+<p><b style=3D"font-family:Arial,Helvetica,sans-serif; font-size:8pt"><span=
+ style=3D"font-family:Arial,Helvetica,sans-serif"></span><span style=3D"col=
+or:rgb(0,111,201); font-family:Arial,Helvetica,sans-serif; font-size:9pt"><=
+span style=3D"font-family:Arial,Helvetica,sans-serif">Muhammad
+ Ishtiaq Afridi |</span></span><span style=3D"font-family:Arial,Helvetica,s=
+ans-serif; font-size:9pt"></span><span style=3D"color:rgb(0,111,201); font-=
+family:Arial,Helvetica,sans-serif; font-size:9pt"><span style=3D"font-famil=
+y:Arial,Helvetica,sans-serif"> BBA |&nbsp;</span></span><span style=3D"font=
+-family:Arial,Helvetica,sans-serif; font-size:9pt"></span><span style=3D"co=
+lor:rgb(0,111,201); font-family:Arial,Helvetica,sans-serif; font-size:9pt">=
+<span style=3D"font-family:Arial,Helvetica,sans-serif">MSc
+ DS&nbsp;|</span></span></b></p>
+<p></p>
+<div style=3D"color:rgb(0,0,0)"><span style=3D"font-size:8pt"><span style=
+=3D"font-family:Arial,Helvetica,sans-serif"><span style=3D"font-family:Aria=
+l,Helvetica,sans-serif">Master of Science in Sustainability Management (MSc=
+SM)</span></span></span></div>
+<div style=3D"color:rgb(0,0,0)"><span style=3D"font-family:Arial,Helvetica,=
+sans-serif; font-size:8pt"><span style=3D"font-family:Arial,Helvetica,sans-=
+serif">Institute for Management &amp; Innovation | University of Toronto Mi=
+ssissauga</span><br style=3D"font-family:Arial,Helvetica,sans-serif">
+</span></div>
+<div style=3D"color:rgb(0,0,0)"><span style=3D"font-family:Arial,Helvetica,=
+sans-serif; font-size:8pt"><span style=3D"font-family:Arial,Helvetica,sans-=
+serif">&nbsp;</span><span id=3D"skype_c2c_container" class=3D"skype_c2c_con=
+tainer notranslate" dir=3D"ltr" tabindex=3D"-1" style=3D"font-family:Arial,=
+Helvetica,sans-serif; font-size:8pt"><span class=3D"skype_c2c_highlighting_=
+inactive_common" dir=3D"ltr" style=3D"font-family:Arial,Helvetica,sans-seri=
+f; font-size:8pt"><span class=3D"skype_c2c_textarea_span" id=3D"non_free_nu=
+m_ui" style=3D"font-family:Arial,Helvetica,sans-serif; font-size:8pt"><img =
+width=3D"0" height=3D"0" class=3D"skype_c2c_logo_img" style=3D"user-select:=
+ none;" src=3D""><span class=3D"skype_c2c_text_span" style=3D"font-family:A=
+rial,Helvetica,sans-serif; font-size:8pt"><span style=3D"font-family:Arial,=
+Helvetica,sans-serif">(647)
+ 839 7890</span></span></span></span></span><span style=3D"font-family:Aria=
+l,Helvetica,sans-serif">&nbsp;| E: ishtiaq.afridi@mail.utoronto.ca</span></=
+span></div>
+<br>
+<p></p>
+</div>
+</div>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> mtenney@yorku.ca &lt;=
+mtenney@yorku.ca&gt;<br>
+<b>Sent:</b> Wednesday, June 6, 2018 7:52:18 PM<br>
+<b>To:</b> Muhammad Afridi<br>
+<b>Subject:</b> Re: Muhammad Ishtiaq Afridi_303391 (Assignment 2)</font>
+<div>&nbsp;</div>
+</div>
+<meta content=3D"text/html; charset=3Dutf-8">
+<div><font face=3D"Tahoma" size=3D"2"><br>
+Nice job, will go over it tomorrow for sure.<br>
+<blockquote style=3D"border-left:solid 2px #000000; margin-left:5px; paddin=
+g-left:5px">
+---- Original Message ----<br>
+<b>From</b>: Muhammad Afridi &lt;ishtiaq.afridi@mail.utoronto.ca&gt;<br>
+<b>To</b>: &quot;mtenney@yorku.ca&quot; &lt;mtenney@yorku.ca&gt;<br>
+<b>Sent</b>: Wed, Jun 6, 2018, 10:31 PM<br>
+<b>Subject</b>: Muhammad Ishtiaq Afridi_303391 (Assignment 2)<br>
+<br>
+<div id=3D"x_divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; col=
+or:#000000; font-family:Calibri,Helvetica,sans-serif">
+<p style=3D"margin-top:0; margin-bottom:0">Hello,</p>
+<p style=3D"margin-top:0; margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0; margin-bottom:0">Please find the 'Assignment 2' i=
+n the attachment. I had difficulty in understanding question 16,19 and 21. =
+I would highly appreciate if you could kindly help me understand these ques=
+tions.</p>
+<p style=3D"margin-top:0; margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0; margin-bottom:0">Thanks!</p>
+<p style=3D"margin-top:0; margin-bottom:0"><br>
+</p>
+<p style=3D"margin-top:0; margin-bottom:0">Ishtiaq.<br>
+</p>
+<p style=3D"margin-top:0; margin-bottom:0"><br>
+</p>
+<div id=3D"x_Signature">
+<div id=3D"x_divtagdefaultwrapper" style=3D"font-size:12pt; color:#000000; =
+background-color:#FFFFFF; font-family:Calibri,Arial,Helvetica,sans-serif">
+<p><b style=3D"font-family:Arial,Helvetica,sans-serif; font-size:8pt"><span=
+ style=3D"font-family:Arial,Helvetica,sans-serif"></span><span style=3D"col=
+or:rgb(0,111,201); font-family:Arial,Helvetica,sans-serif; font-size:9pt"><=
+span style=3D"font-family:Arial,Helvetica,sans-serif">Muhammad
+ Ishtiaq Afridi |</span></span><span style=3D"font-family:Arial,Helvetica,s=
+ans-serif; font-size:9pt"></span><span style=3D"color:rgb(0,111,201); font-=
+family:Arial,Helvetica,sans-serif; font-size:9pt"><span style=3D"font-famil=
+y:Arial,Helvetica,sans-serif"> BBA |&nbsp;</span></span><span style=3D"font=
+-family:Arial,Helvetica,sans-serif; font-size:9pt"></span><span style=3D"co=
+lor:rgb(0,111,201); font-family:Arial,Helvetica,sans-serif; font-size:9pt">=
+<span style=3D"font-family:Arial,Helvetica,sans-serif">MSc
+ DS&nbsp;|</span></span></b></p>
+<p></p>
+<div style=3D"color:rgb(0,0,0)"><span style=3D"font-size:8pt"><span style=
+=3D"font-family:Arial,Helvetica,sans-serif"><span style=3D"font-family:Aria=
+l,Helvetica,sans-serif">Master of Science in Sustainability Management (MSc=
+SM)</span></span></span></div>
+<div style=3D"color:rgb(0,0,0)"><span style=3D"font-family:Arial,Helvetica,=
+sans-serif; font-size:8pt"><span style=3D"font-family:Arial,Helvetica,sans-=
+serif">Institute for Management &amp; Innovation | University of Toronto Mi=
+ssissauga</span><br style=3D"font-family:Arial,Helvetica,sans-serif">
+</span></div>
+<div style=3D"color:rgb(0,0,0)"><span style=3D"font-family:Arial,Helvetica,=
+sans-serif; font-size:8pt"><span style=3D"font-family:Arial,Helvetica,sans-=
+serif">&nbsp;</span><span id=3D"x_skype_c2c_container" class=3D"x_skype_c2c=
+_container x_notranslate" dir=3D"ltr" tabindex=3D"-1" style=3D"font-family:=
+Arial,Helvetica,sans-serif; font-size:8pt"><span class=3D"x_skype_c2c_highl=
+ighting_inactive_common" dir=3D"ltr" style=3D"font-family:Arial,Helvetica,s=
+ans-serif; font-size:8pt"><span class=3D"x_skype_c2c_textarea_span" id=3D"x=
+_non_free_num_ui" style=3D"font-family:Arial,Helvetica,sans-serif; font-siz=
+e:8pt"><img class=3D"x_skype_c2c_logo_img" width=3D"0" height=3D"0" style=
+=3D"" src=3D""><span class=3D"x_skype_c2c_text_span" style=3D"font-family:A=
+rial,Helvetica,sans-serif; font-size:8pt"><span style=3D"font-family:Arial,=
+Helvetica,sans-serif">(647)
+ 839 7890</span></span></span></span></span><span style=3D"font-family:Aria=
+l,Helvetica,sans-serif">&nbsp;| E: ishtiaq.afridi@mail.utoronto.ca</span></=
+span></div>
+<br>
+<p></p>
+</div>
+</div>
+</div>
+</blockquote>
+</font></div>
+</body>
+</html>
+
+--_000_YTOPR0101MB08573837B343CDE47006C82AB77B0YTOPR0101MB0857_--
