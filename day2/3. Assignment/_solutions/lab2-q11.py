@@ -1,0 +1,1 @@
+df[(df['animal'] == 'cat') & (df['age'] < 3)]

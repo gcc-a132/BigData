@@ -1,0 +1,1 @@
+df[df['age'].between(2, 4)]

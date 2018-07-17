@@ -1,0 +1,1 @@
+df.pivot_table(index='animal', columns='visits', values='age', aggfunc='mean')

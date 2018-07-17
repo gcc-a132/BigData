@@ -1,0 +1,1 @@
+df['animal'].value_counts()

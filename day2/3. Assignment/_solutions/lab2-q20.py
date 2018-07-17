@@ -1,0 +1,1 @@
+df['animal'] = df['animal'].replace('snake', 'python')
