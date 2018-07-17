@@ -1,0 +1,4 @@
+In day 8's lab we went over two new libraries: osmnx and pandana. 
+These two libraries utilize OpenStreetMap data to model transportation networks in two very different data structures. (I.e., OSMNX uses a network graph from Networkx and pandana uses a dataframe in hd5 data format). 
+
+Your task is to adapt the pandana tutorial to be for Toronto, ON and select an amenity tag that you feel important for the measure of accessability. You are to submit a png of the accessability measure for walking over the GTA. 
